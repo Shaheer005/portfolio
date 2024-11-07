@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on different devices -->
+    <title>Plum Builders</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+
+<body>
+    <!-- Header section  -->
+    <header>
+        <!-- Top bar -->
+        <div class="top-bar"> <!-- Corrected class name to "top-bar" instead of "top bar" -->
+            <a href="#">REQUEST A QUOTE</a>
+            <a href="#">Visit our Showroom</a>
+            <a href="#">What's In Stock</a> <!-- Added apostrophe to "What's" -->
+        </div>
+
+        <div class="navbar"> <!-- Fixed the missing "div" tag opening -->
+            <!-- Logo section -->
+            <div class="logo">
+                <img src="images\Logo@2x.png" alt="Plum builder logo"> 
+            </div>
+            
+            <!-- Primary navigation links -->
+            <nav>
+                <a href="#">COUNTERTOPS</a>
+                <a href="#">ARCHITECTURAL</a>
+
+                <!-- Dropdown for Commercial -->
+                <div class="dropdown">
+                    <a href="#">COMMERCIAL ▲</a> 
+                    <div class="dropdown-content">
+                        <a href="#">BEST SELLER</a>
+                        <a href="#">QUARTZ</a>
+                        <a href="#">INVERTORY</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown for Stone & Products -->
+                <div class="dropdown">
+                    <a href="#">STONE & PRODUCTS ▲</a>
+                    <div class="dropdown-content">
+                        <a href="#">BEST SELLER</a>
+                        <a href="#">QUARTZ</a>
+                        <a href="#">INVERTORY</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section  -->
+    <section class="hero">
+        <img src="images\final image@2x.png" alt="Luxury Kitchen" class="hero-image"> 
+
+        <div class="hero-content">
+            <h1>ENJOY EVERYDAY LUXURY</h1>
+            <p>It's never been easier to design and achieve your ideal outcome.</p>
+            <button>REQUEST A QUOTE</button> <!-- Button-->
+        </div>
+    </section>
+
+
+    <section class="project-slider">
+        <h2>START YOUR JOURNEY</h2>
+        <P>What type of project do you have?</P>
+
+        <!--slider container-->
+        <div class="slider-container">
+            <button class="slider-button prev" onclick="prevSlide()">&#10094; PREV</button>
+    
+            <!-- Slider items -->
+            <div class="slider">
+                <div class="slide">
+                    <img src="images\pexels-max-rahubovskiy-6301185@2x.png" alt="Kitchen">
+                    <div class="slide-caption">KITCHEN</div>
+                </div>
+                <div class="slide">
+                    <img src="images\pexels-vecislavas-popa-3741317.png" alt="Bathroom">
+                    <div class="slide-caption">BATHROOM</div>
+                </div>
+                <div class="slide">
+                    <img src="images\spacejoy-XpbtQfr9Skg-unsplash@2x.png" alt="Fireplace">
+                    <div class="slide-caption">FIREPLACE</div>
+                </div>
+                <div class="slide">
+                    <img src="images\How-to-do-Marble-Wall-Cladding.png" alt="Wall Cladding">
+                    <div class="slide-caption">WALL CLADDING</div>
+                </div>
+                <div class="slide">
+                    <img src="images\Group 13.png" alt="Cubic">
+                    <div class="slide-caption">CUBIC</div>
+                </div>
+            </div>
+
+            <button class="slider-button next" onclick="nextSlide()">NEXT &#10095;</button> 
+        </div>
+</section>
+
+<section class="material-slider">
+    <h2>Shop Your Countertop by Material and Function</h2>
+    <p>Find the perfect stone and countertop for your home.</p>
+
+    <div class="slider-container">
+        <button class="slider-button prev" onclick="prevSlide()">‹ Prev</button>
+
+        <div class="slider">
+            <div class="slide quartz-slide">
+                <div class="slide-image">
+                    <img src="images\8.Ranier@2x.png" alt="Quartz">
+                    <div class="info-overlay">
+                        <p>Engineered stone composed of 90-95% crushed natural quartz mixed with resins and pigments.</p>
+                        <ul>
+                            <li>Highly durable.</li>
+                            <li>Low maintenance.</li>
+                            <li>Easy to clean.</li>
+                            <li>Wide range of colors.</li>
+                            <li>Prevents bacterial growth.</li>
+                            <li>Can last for decades with proper care.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-caption">QUARTZ</div>
+            </div>
+            <div class="slide">
+                <img src="images\627575339a4b4a7aabc06ae8_modern-bathroom-marble-countertop-1600w@2x.png" alt="Marble">
+                <button class="shop-button">SHOP MATERIAL</button>
+            </div>
+        </div>
+
+        <button class="slider-button next" onclick="nextSlide()">Next ›</button>
+    </div>
+
+    <div class="dot-navigation">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Contact Information -->
+        <div class="footer-section">
+            <img src="C:\Users\shahe\Desktop\WEBSITE\images\download (8).png" alt="Plum Builders Logo" class="footer-logo">
+            <p>CALL: 555-555-9855</p>
+            <p>EMAIL: INFO@PLUMBUILDERS.COM</p>
+            <p>MAIN SLAB SHOWROOM:<br>106 PURDY AVE, PORT CHESTER, NY, 10573</p>
+            <p>FACTORY LOCATION:<br>28 NURSERY LANE, RYE, NY, 10580</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>DESIGN ASSISTANCE</h4>
+            <a href="#">Measurements</a>
+            <a href="#">Free Design Guide</a>
+            <a href="#">Design Consultation</a>
+            <a href="#">Visualizer</a>
+        </div>
+        
+        <!-- About Us Links -->
+        <div class="footer-section">
+            <h4>ABOUT US</h4>
+            <a href="#">Who We Are</a>
+            <a href="#">What We Do</a>
+            <a href="#">How We Do It</a>
+            <a href="#">Showroom</a>
+            <a href="#">Trade Professionals</a>
+        </div>
+        
+        <!-- Company Info Links -->
+        <div class="footer-section">
+            <h4>COMPANY INFO</h4>
+            <a href="#">Financing</a>
+            <a href="#">Careers</a>
+            <a href="#">Made in USA</a>
+            <a href="#">Blog</a>
+            <a href="#">Resources</a>
+        </div>
+    </div>
+
+    <!-- Bottom Links -->
+    <div class="footer-bottom">
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <p>&copy; 2023 Plum Builders. All Rights Reserved. Powered by XYZ</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
